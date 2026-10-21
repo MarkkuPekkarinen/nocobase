@@ -5,6 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.29](https://github.com/nocobase/nocobase/compare/v2.2.28...v2.2.29) - 2026-10-21
+
+### 🐛 Bug Fixes
+
+- **[client-v2]**
+  - Fix vertical alignment of sequence inputs in v2 filter forms. ([#11044](https://github.com/nocobase/nocobase/pull/11044)) by @katherinehhh
+
+  - Fixed disabled styling of relation fields controlled by linkage rules in v2 mobile forms. ([#11036](https://github.com/nocobase/nocobase/pull/11036)) by @katherinehhh
+
+- **[UI layout]** Fix the issue where mobile pages hidden from the menu could not be opened from links ([#10641](https://github.com/nocobase/nocobase/pull/10641)) by @zhangzhonghe
+
+- **[Block: Tree]** Fixed v2 tree block action buttons disappearing after a browser refresh. ([#11038](https://github.com/nocobase/nocobase/pull/11038)) by @katherinehhh
+
+## [v2.2.28](https://github.com/nocobase/nocobase/compare/v2.2.27...v2.2.28) - 2026-10-19
+
+### 🐛 Bug Fixes
+
+- **[app]** Fix `APP_CLIENT_ENTRY_MODE` redirects not working in dev mode when `APP_PUBLIC_PATH` is not `/`. ([#10955](https://github.com/nocobase/nocobase/pull/10955)) by @Molunerfinn
+
+- **[evaluators]** Fixed a math.js expression sandbox escape in workflow calculation nodes by upgrading mathjs. ([#10984](https://github.com/nocobase/nocobase/pull/10984)) by @mytharcher
+
+- **[server]** Fixed the plugin dependency compatibility check for Axios 1.20.x. ([#11023](https://github.com/nocobase/nocobase/pull/11023)) by @hongboji
+
+- **[Flow engine]** Fixed unresolved Liquid variables in Markdown for non-admin roles. ([#11007](https://github.com/nocobase/nocobase/pull/11007)) by @gchust
+
+- **[UI layout]** Fixed incorrect route permission check states and unintended loss of existing V1 permissions when saving permissions in V2. ([#10957](https://github.com/nocobase/nocobase/pull/10957)) by @katherinehhh
+
+- **[Workflow]** Fixed missing loop-item fields in scope-variable selectors for nested workflow loops. ([#10942](https://github.com/nocobase/nocobase/pull/10942)) by @mytharcher
+
 ## [v2.2.27](https://github.com/nocobase/nocobase/compare/v2.2.26...v2.2.27) - 2026-10-16
 
 ### 🐛 Bug Fixes
